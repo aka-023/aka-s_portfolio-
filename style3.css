@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-weight: 300;
+    font-family: Rubik;
+    line-height: 1.4;
+    background-color: #b3c5d7;
+}
+.logo{
+    font-weight: 700;
+    font-size: 24px;
+}
+.small{
+    font-weight: 500;
+    font-size: 15px;
+}
+.navbar{
+    background-color:#6B7B8C;
+    box-shadow: 3px 3px 3px rgba(2,3,1,0.5);
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 15%;
+    color: #F3EFEF;
+    z-index: 1;
+}
+.navdiv{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navdiv ul{
+    list-style: none;
+}
+.navigation{
+    display: flex;
+}
+.navigation a:active {
+    color: #3fa9b7; 
+    font-weight: 600;
+}
+li a{
+    text-decoration-line: none;
+    color:#244160;
+}
+.navigation li{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #F3EFEF;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #F3EFEF;
+}
+
+.container{
+    max-width: 60vw;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container h1{
+    color: royalblue;
+}
+.box1{
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 5px;
+    border: 1px solid #6B7B8C;
+    height: auto;
+    color: rgb(172, 178, 184);
+    width: 600px;
+    align-self: flex-start;
+    background-image: url(plain.avif);
+    box-shadow: 2px 2px 5px #6B7B8C;
+    background-color: #465575;
+}
+.box2{
+    padding-left: 7px;
+    padding-right: 5px;
+    border: 1px solid #6B7B8C;
+    border-radius: 10px;
+    height: auto;
+    color: rgb(172, 178, 184);
+    width: 600px;
+    align-self: flex-end;
+    background-image: url(plain.avif);
+    box-shadow: 2px 2px 5px #6B7B8C;
+    background-color: #465575;
+}
+.box3{
+    padding-left: 7px;
+    border-radius: 10px;
+    padding-right: 5px;
+    border: 1px solid #6B7B8C;
+    height: auto;
+    color: rgb(172, 178, 184);
+    width: 600px;
+    align-self: flex-start;
+    background-image: url(plain.avif);
+    box-shadow: 2px 2px 5px #6B7B8C;
+    background-color: #465575;
+}
+.box4{
+    padding-left: 7px;
+    border-radius: 10px;
+    padding-right: 5px;
+    border: 1px solid #6B7B8C;
+    height: auto;
+    color: rgb(172, 178, 184);
+    width: 600px;
+    align-self: flex-end;
+    background-image: url(plain.avif);
+    box-shadow: 2px 2px 5px #6B7B8C;
+    background-color: #465575;
+}
+
+.icon{
+    padding: 6px;
+    margin: 4px; 
+}
+.para_text{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.head_text{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2px;
+    padding: 5px;
+    color: beige;
+}
+.footer_content{
+    /* width: 90vw; */
+    padding-top: 20px;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #6B7B8C;
+    /* opacity: 0.8; */
+    justify-content: space-around;
+    margin-top: 150px;
+    line-height: 1.8em;
+    font-weight: 450;
+}
+.follow a{
+    color: black
+}
+@media screen and (max-width:800px){
+    .navdiv{
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        box-shadow:none;
+        width: auto;
+    }
+    .logo{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .small{
+        font-weight: 350;
+        font-size: 12px;
+    }
+    .navigation li{
+        border: none;
+        border-radius: 10px;
+        font-weight: 250;
+        background-color:none;
+        width: auto;
+        padding: 3px;
+        font-size: small
+    }
+    .container{
+        align-items: center;
+        width: auto;
+        max-width: 60vw;
+    }
+    .box1, .box2, .box3, .box4{
+        width: auto;
+        height: auto;
+    }
+    .para_text{
+        font-size: large;
+    }
+    .myedu h1{
+        font-size:30px;
+
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        justify-items: center;
+        gap: 10px;
+        align-items: center;
+        width: auto;
+    }
+    .email{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .big{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

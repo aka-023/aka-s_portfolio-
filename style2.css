@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    line-height: 1.8em;
+    font-weight: 450;
+    /* font-family: Roboto; */
+    font-family: Merriweather;
+    background-color: #ccd5e0;
+}
+.content{
+    /* max-width: 1000px; */
+    max-width: auto;
+    /* border: 2px solid red; */
+    margin: auto;
+    margin-top: 100px;
+    font-weight: 300;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "contact phone email";
+    color: rgb(68, 65, 65);
+}
+.logo{
+    font-weight: 700;
+    font-size: 24px;
+}
+.small{
+    font-weight: 500;
+    font-size: 15px;
+}
+.navbar{
+    background-color:#6B7B8C;
+    box-shadow: 3px 3px 3px rgba(2,3,1,0.5);
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 15%;
+    color: #F3EFEF;
+    z-index: 1;
+}
+.navdiv{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navdiv ul{
+    list-style: none;
+}
+.navigation{
+    display: flex;
+}
+.navigation a:active {
+    color: #3fa9b7; 
+    font-weight: 600;
+}
+li a{
+    text-decoration-line: none;
+    color:#143456;
+    font-weight: 600;
+}
+.navigation li{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #F3EFEF;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #F3EFEF;
+}
+.contact h2{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.box1{
+    /* border: 1px solid black; */
+    margin-left: 7%;
+    padding: 10px;
+}
+.box2{
+    /* border: 1px solid black; */
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 200;
+    font-size: 13px;
+    margin-right: 7%;
+}
+.con1 {
+   display: flex;
+   justify-content: space-around;
+}
+.con2{
+    display: flex;
+    justify-content: space-around;
+}
+/* .con3{
+    display: flex;
+    justify-content: space-around;
+} */
+.empty{
+    border: 1px solid black;
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+}
+
+input#fname{
+    height: 35px;
+    width: 200px;
+    border-radius: 4px;
+    padding: 7px;
+    box-shadow: inset;
+    border: 1px solid grey;
+    margin-right: 5px;
+}
+input#lname{
+    height: 35px;
+    width: 200px;
+    border-radius: 4px;
+    padding: 7px;
+    box-shadow: inset;
+    border: 1px solid grey;
+    margin-left: 5px;
+}
+input#email{
+    height: 35px;
+    width: 200px;
+    border-radius: 4px;
+    padding: 7px;
+    border: 1px solid grey;
+    margin-right: 5px;
+    box-shadow: inset;
+}
+input#subject{
+    height: 35px;
+    width: 200px;
+    border-radius: 4px;
+    padding: 7px;
+    border: 1px solid grey;
+    margin-left: 5px;
+    box-shadow: inset;
+}
+input#message{
+    height: 70px;
+    width: 410px;
+    border-radius: 4px;
+    padding: 7px;
+    border: 1px solid grey;
+    box-shadow: inset;
+    justify-content: center;
+    align-items: center;
+}
+.item6 button{
+    color: #143456;
+    padding: 7px;
+    margin: 10px auto auto auto;
+    background-color: ghostwhite;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.phone a{
+    text-decoration-line: none;
+    color: #1d354d;
+}
+.email_ a{
+    text-decoration-line: none;
+    color: #1d354d;
+}
+.footer_content{
+    /* width: 90vw; */
+    padding-top: 20px;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #6B7B8C;
+    /* opacity: 0.8; */
+    justify-content: space-around;
+    margin-top: 150px;
+    line-height: 1.8em;
+    font-weight: 600;
+}
+.follow a{
+    color: black
+}
+@media screen and (max-width:800px){
+    .navdiv{
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        box-shadow:none;
+    }
+    .logo{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .small{
+        font-weight: 350;
+        font-size: 12px;
+    }
+    .navigation li{
+        border: none;
+        border-radius: 10px;
+        font-weight: 350;
+        background-color:none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        justify-items: center;
+        gap: 10px;
+        align-items: center;
+    }
+    .email{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .big{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .con1{
+        display: flex;
+        flex-direction: column;
+    }
+    .con2{
+        display: flex;
+        flex-direction: column;
+    }
+    .box2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    input#fname, input#lname, input#email, input#subject, input#message{
+        width: 250px;
+        border-width: 2px;
+    }
+}

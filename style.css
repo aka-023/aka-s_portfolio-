@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-weight: 300;
+    font-family: Rubik;
+    line-height: 1.4;
+    background-color: #b3c5d7;
+}
+.logo{
+    font-weight: 700;
+    font-size: 24px;
+}
+.small{
+    font-weight: 500;
+    font-size: 15px;
+}
+.navbar{
+    background-color:#6B7B8C;
+    box-shadow: 3px 3px 3px rgba(2,3,1,0.5);
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 15%;
+    color: #F3EFEF;
+    z-index: 1;
+}
+.navdiv{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navdiv ul{
+    list-style: none;
+}
+.navigation{
+    display: flex;
+}
+li a{
+    text-decoration-line: none;
+    color:#244160;
+}
+.navigation a:active {
+    color: #3fa9b7; 
+    font-weight: 600;
+}
+
+.navigation li{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #F3EFEF;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #F3EFEF;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+    align-items: center;
+}
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+.profile_pic img{
+    max-width: 400px;
+    border-radius: 300px;
+}
+.greet h1{
+    font-size: 72px;
+    font-weight: 500;
+    font-family: Merriweather;
+    color: #F3EFEF;
+}
+.greet h3{
+    font-size: 30px;
+    font-weight: 350;
+    font-family: Merriweather;
+    color: #244160;
+}
+.greet p{
+    font-weight: 400;
+}
+@media screen and (max-width:800px){
+    .navdiv{
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        box-shadow:none;
+    }
+    .logo{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .small{
+        font-weight: 350;
+        font-size: 12px;
+    }
+    .navigation li{
+        border: none;
+        border-radius: 10px;
+        font-weight: 350;
+        background-color:none;
+    }
+    .profile_pic img{
+        max-width: 300px;
+        border-radius: 200px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    body{
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        justify-items: center;
+        gap: 10px;
+        align-items: center;
+    }
+    .email{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .big{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+.footer_content{
+    /* width: 90vw; */
+    padding-top: 20px;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #6B7B8C;
+    /* opacity: 0.8; */
+    justify-content: space-around;
+    margin-top: 150px;
+    line-height: 1.8em;
+    font-weight: 450;
+}
+.follow a{
+    color: black
+}
