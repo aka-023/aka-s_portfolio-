@@ -44,6 +44,7 @@ nav ul li a{
     font-weight: 500;
     padding: 7px 13px;
     border-radius: 3px;
+    text-decoration:none;
     text-transform: uppercase;
 }
 a.active, a:hover{
