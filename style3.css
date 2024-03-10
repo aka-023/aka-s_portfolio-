@@ -41,6 +41,7 @@ nav ul li a{
     font-size: 17px;
     font-weight: 500;
     padding: 7px 13px;
+    text-decoration:none;
     border-radius: 3px;
     text-transform: uppercase;
 }
