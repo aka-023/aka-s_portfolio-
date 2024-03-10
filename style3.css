@@ -10,51 +10,56 @@ body{
     line-height: 1.4;
     background-color: #b3c5d7;
 }
-.logo{
-    font-weight: 700;
+nav{
+    height: 80px;
+    width: 100%;
+    background: #184b98;
+    z-index: 1;
+} 
+.logo{  
+    color:  white;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
     font-size: 24px;
-}
+}  
 .small{
     font-weight: 500;
     font-size: 15px;
+}    
+nav ul{
+    float: right;
+    margin-right: 5px;
 }
-.navbar{
-    background-color:#6B7B8C;
-    box-shadow: 3px 3px 3px rgba(2,3,1,0.5);
-    top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 15%;
-    color: #F3EFEF;
-    z-index: 1;
+nav ul li{  
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
-.navdiv{
-    padding-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navdiv ul{
-    list-style: none;
-}
-.navigation{
-    display: flex;
-}
-.navigation a:active {
-    color: #3fa9b7; 
-    font-weight: 600;
-}
-li a{
-    text-decoration-line: none;
-    color:#244160;
-}
-.navigation li{
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid #F3EFEF;
-    border-radius: 10px;
+nav ul li a{
+    color: #05223e;
+    font-size: 17px;
     font-weight: 500;
-    background-color: #F3EFEF;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: white;
+    transition: 0.5s;
+    color: black;
+}
+.checkbtn{
+    font-size: 30px;
+    color: beige;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+    display: none;
+}
+#check{
+    display: none;
 }
 
 .container{
@@ -79,7 +84,7 @@ li a{
     align-self: flex-start;
     background-image: url(plain.avif);
     box-shadow: 2px 2px 5px #6B7B8C;
-    background-color: #465575;
+    background-color: #184b98;
 }
 .box2{
     padding-left: 7px;
@@ -92,7 +97,7 @@ li a{
     align-self: flex-end;
     background-image: url(plain.avif);
     box-shadow: 2px 2px 5px #6B7B8C;
-    background-color: #465575;
+    background-color: #184b98;
 }
 .box3{
     padding-left: 7px;
@@ -105,7 +110,7 @@ li a{
     align-self: flex-start;
     background-image: url(plain.avif);
     box-shadow: 2px 2px 5px #6B7B8C;
-    background-color: #465575;
+    background-color: #184b98;
 }
 .box4{
     padding-left: 7px;
@@ -118,7 +123,7 @@ li a{
     align-self: flex-end;
     background-image: url(plain.avif);
     box-shadow: 2px 2px 5px #6B7B8C;
-    background-color: #465575;
+    background-color: #184b98;
 }
 
 .icon{
@@ -138,6 +143,7 @@ li a{
 }
 .footer_content{
     /* width: 90vw; */
+    color: white;
     padding-top: 20px;
     padding-bottom: 5%;
     margin-left: auto;
@@ -145,7 +151,7 @@ li a{
     height: auto;
     display: flex;
     /* justify-content: space-between; */
-    background-color: #6B7B8C;
+    background-color: #184b98;
     /* opacity: 0.8; */
     justify-content: space-around;
     margin-top: 150px;
@@ -153,32 +159,54 @@ li a{
     font-weight: 450;
 }
 .follow a{
-    color: black
+    color: bisque;
+    font-size: larger;
+}
+.follow a:hover{
+    background-color: #184b98;
 }
 @media screen and (max-width:800px){
-    .navdiv{
-        display: flex;
-        flex-direction: column;
-        background-color: none;
-        box-shadow:none;
-        width: auto;
+    nav{
+        z-index: 1;
+        max-width: 100%;    
     }
     .logo{
-        font-weight: 400;
-        font-size: 16px;
+        padding: 0;
+        display:block;
+        margin-left: 0.7rem;
+        font-size: 18px;  
+        /* display: none;  */
     }
     .small{
-        font-weight: 350;
-        font-size: 12px;
+       display: none;
     }
-    .navigation li{
-        border: none;
-        border-radius: 10px;
-        font-weight: 250;
-        background-color:none;
-        width: auto;
-        padding: 3px;
-        font-size: small
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        z-index:1;
+        width: 100%;
+        height: 100vh;
+        /* background: #b3c5d7; */
+        background:url('background.avif');
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    a.active, a:hover{
+        background: none;
+        color: black;
+    }
+    #check:checked ~ul{
+        left: 0;
     }
     .container{
         align-items: center;
