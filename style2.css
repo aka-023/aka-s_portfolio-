@@ -1,34 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-html, body{
-    height: 100%;
-    line-height: 1.8em;
-    font-weight: 450;
-    /* font-family: Roboto; */
-    font-family: Merriweather;
-    background-color: #ccd5e0;
-}
-.content{
-    /* max-width: 1000px; */
-    max-width: auto;
-    /* border: 2px solid red; */
-    margin: auto;
-    margin-top: 100px;
-    font-weight: 300;
-    display: grid;
     gap: 10px;
     grid-template-areas: 
     "contact phone email";
-    color: rgb(68, 65, 65);
+    color: #052e58;
 }
 nav{
     height: 80px;
     width: 100%;
-    background: #6B7B8C;
+    background:#d7b3b3;
     z-index: 1;
 } 
 .logo{  
@@ -191,7 +170,7 @@ input#message{
     height: auto;
     display: flex;
     /* justify-content: space-between; */
-    background-color: #6B7B8C;
+    background:#d7b3b3;
     /* opacity: 0.8; */
     justify-content: space-around;
     margin-top: 150px;
@@ -199,7 +178,10 @@ input#message{
     font-weight: 600;
 }
 .follow a{
-    color: black
+    color: black;
+}
+.follow a:hover{
+    background-color:#d7b3b3;
 }
 @media screen and (max-width:800px){
     nav{
