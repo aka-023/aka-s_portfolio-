@@ -6,18 +6,18 @@
 html,
 body{
     font-weight: 300;
-    font-family: Rubik;
+    font-family: Roboto;    
     line-height: 1.4;
     background-color: #b3c5d7;
 }
 nav{
     height: 80px;
     width: 100%;
-    background: #184b98;
+    background:#d7b3b3;
     z-index: 1;
 } 
 .logo{  
-    color:  white;
+    color:  #052e58;
     line-height: 80px;
     padding: 0 50px;
     font-weight: bold;
@@ -37,7 +37,7 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: #05223e;
+    color: #052e58;
     font-size: 17px;
     font-weight: 500;
     padding: 7px 13px;
@@ -71,12 +71,11 @@ a.active, a:hover{
     gap: 30px;
 }
 .container h1{
-    color: royalblue;
+    color: #006d77;
 }
 .box1{
-    border-radius: 10px;
-    padding-left: 7px;
-    padding-right: 5px;
+    border-radius: 1rem;
+    padding: 1rem;
     border: 1px solid #6B7B8C;
     height: auto;
     color: rgb(172, 178, 184);
@@ -84,11 +83,11 @@ a.active, a:hover{
     align-self: flex-start;
     background-image: url(plain.avif);
     box-shadow: 2px 2px 5px #6B7B8C;
-    background-color: #184b98;
+    background-color: #006d77;
 }
 .box2{
-    padding-left: 7px;
-    padding-right: 5px;
+    border-radius: 1rem;
+    padding: 1rem;
     border: 1px solid #6B7B8C;
     border-radius: 10px;
     height: auto;
@@ -97,11 +96,11 @@ a.active, a:hover{
     align-self: flex-end;
     background-image: url(plain.avif);
     box-shadow: 2px 2px 5px #6B7B8C;
-    background-color: #184b98;
+    background-color: #006d77;
 }
 .box3{
-    padding-left: 7px;
-    border-radius: 10px;
+    border-radius: 1rem;
+    padding: 1rem;
     padding-right: 5px;
     border: 1px solid #6B7B8C;
     height: auto;
@@ -110,11 +109,11 @@ a.active, a:hover{
     align-self: flex-start;
     background-image: url(plain.avif);
     box-shadow: 2px 2px 5px #6B7B8C;
-    background-color: #184b98;
+    background-color: #006d77;
 }
 .box4{
-    padding-left: 7px;
-    border-radius: 10px;
+    border-radius: 1rem;
+    padding: 1rem;
     padding-right: 5px;
     border: 1px solid #6B7B8C;
     height: auto;
@@ -123,7 +122,7 @@ a.active, a:hover{
     align-self: flex-end;
     background-image: url(plain.avif);
     box-shadow: 2px 2px 5px #6B7B8C;
-    background-color: #184b98;
+    background-color: #006d77;
 }
 
 .icon{
@@ -143,7 +142,6 @@ a.active, a:hover{
 }
 .footer_content{
     /* width: 90vw; */
-    color: white;
     padding-top: 20px;
     padding-bottom: 5%;
     margin-left: auto;
@@ -151,19 +149,18 @@ a.active, a:hover{
     height: auto;
     display: flex;
     /* justify-content: space-between; */
-    background-color: #184b98;
+    background:#d7b3b3;
     /* opacity: 0.8; */
     justify-content: space-around;
     margin-top: 150px;
     line-height: 1.8em;
-    font-weight: 450;
+    font-weight: 600;
 }
 .follow a{
-    color: bisque;
-    font-size: larger;
+    color: black;
 }
 .follow a:hover{
-    background-color: #184b98;
+    background-color:#d7b3b3;
 }
 @media screen and (max-width:800px){
     nav{
