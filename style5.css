@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-weight: 300;
+    font-family: Roboto;
+    line-height: 1.4;
+    background-color: #b3c5d7;
+}
+/***********************************************************/
+nav{
+    height: 80px;
+    width: 100%;
+    /* background: #da9c51; */
+    background:#d7b3b3;
+    z-index: 1;
+} 
+.logo{  
+    color:  #052e58;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-size: 24px;
+}  
+.small{
+    font-weight: 500;
+    font-size: 15px;
+}    
+nav ul{
+    float: right;
+    margin-right: 5px;
+}
+nav ul li{  
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #052e58;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: white;
+    transition: 0.5s;
+    color: black;
+}
+.checkbtn{
+    font-size: 30px;
+    color: beige;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/**********************************************/
+.heading{
+    width: 65vw;
+    text-align: center;
+    margin: auto;
+    font-size: 1.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 2rem;
+    color: #052e58;
+}
+
+.container{
+    position:relative;
+    top:4vh;
+}
+.box{
+    height: 330px;
+    width: 270px;
+    display: flex;
+    border-radius: 1rem;
+    flex-direction: column;
+    position: relative;
+}
+.container img{
+    width: 270px;
+    height: 200px;   
+}
+.grid{
+    display: grid;
+    gap:10px;
+    justify-content: space-around;
+    grid-template-areas: 
+    "I1 I2 I3"
+    "I4 I5 I6"
+    "I7 I8 I9"
+    "I10 I11 I12";
+}
+.box1{
+    grid-area: I1;
+}
+.box2{
+    grid-area: I2;
+}
+.box3{
+    grid-area: I3;
+}
+.box4{
+    grid-area: I4;
+}
+.box5{
+    grid-area: I5;
+}
+.box6{
+    grid-area: I6;
+}
+.box7{
+    grid-area: I7;
+}
+.box8{
+    grid-area: I8;
+}
+.box9{
+    grid-area: I9;
+}
+.box10{
+    grid-area: I10;
+}
+.box11{
+    grid-area: I11;
+}
+.box12{
+    grid-area: I12;
+}
+.icon{
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+}
+.icon2{
+    font-size: 1.35rem;
+    position: absolute;
+    bottom: 5px;
+    right: 35px;
+}
+
+.box{
+    overflow: hidden;
+    box-shadow: 0.5rem 0 1.2rem #052e58;
+    transition: all 0.4s;
+    margin: 1rem;
+}
+.box:hover{
+    transform: translateY(-0.6rem);
+    box-shadow: 0 0 1.2rem #d16767;
+}
+.description{
+    text-align: center;
+    margin-top: 1rem;
+    color: #052e58;
+}
+.footer_content{
+    /* width: 90vw; */
+    padding-bottom: 5%;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    background:#d7b3b3;
+    font-size: 1.1rem;
+    /* opacity: 0.8; */
+    justify-content: space-around;
+    margin-top: 150px;
+    line-height: 1.8em;
+}
+.follow a{
+    color: black;
+    font-size:larger;
+}
+.follow a:hover{
+    background-color: #d7b3b3;
+}
+@media (max-width:900px){
+    nav{
+        z-index: 1;
+        max-width: 100%;    
+    }
+    .logo{
+        padding: 0;
+        display:block;
+        margin-left: 0.7rem;
+        font-size: 18px;  
+        /* display: none;  */
+    }
+    .small{
+       display: none;
+    }
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        z-index:1;
+        width: 100%;
+        height: 100vh;
+        /* background: #b3c5d7; */
+        background:url('background.avif');
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    a.active, a:hover{
+        background: none;
+        color: black;
+    }
+    #check:checked ~ul{
+        left: 0;
+    }
+    /****************************************************/
+    .grid{
+        display:grid;
+        gap:1vh;
+        grid-template-areas:
+        "I1"
+        "I2"
+        "I3"
+        "I4"
+        "I5"
+        "I6"
+        "I7"
+        "I8"
+        "I9"
+        "I10"
+        "I11"
+        "I12";
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        justify-items: center;
+        gap: 10px;
+        align-items: center;
+    }
+    .email{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
