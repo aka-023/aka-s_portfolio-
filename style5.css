@@ -149,7 +149,14 @@ a.active, a:hover{
     bottom: 5px;
     right: 35px;
 }
-
+.icon a, .icon2 a{
+    color: #052e58;
+}
+.icon a:hover, .icon2 a:hover{
+    color: #d16767;
+    background-color: #b3c5d7;
+    cursor: pointer ;
+}
 .box{
     overflow: hidden;
     box-shadow: 0.5rem 0 1.2rem #052e58;
@@ -186,6 +193,7 @@ a.active, a:hover{
     font-size:larger;
 }
 .follow a:hover{
+    color:teal;
     background-color: #d7b3b3;
 }
 @media (max-width:900px){
@@ -212,7 +220,7 @@ a.active, a:hover{
         width: 100%;
         height: 100vh;
         /* background: #b3c5d7; */
-        background:url('images/background.avif');
+        background:linear-gradient(to right, #052e58, #b3c5d7, #052e58);
         top: 80px;
         left: -100%;
         text-align: center;
