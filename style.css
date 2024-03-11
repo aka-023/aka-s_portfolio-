@@ -120,7 +120,7 @@ a.active, a:hover{
         width: 100%;
         height: 100vh;
         /* background: #b3c5d7; */
-        background:url('images/background.avif');
+        background:linear-gradient(to right, #052e58, #b3c5d7, #052e58);
         top: 80px;
         left: -100%;
         text-align: center;
@@ -198,5 +198,6 @@ a.active, a:hover{
     font-size: larger;
 }
 .follow a:hover{
+    color:teal;
     background-color: #0f2f51;
 }
