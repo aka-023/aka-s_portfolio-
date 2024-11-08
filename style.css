@@ -78,8 +78,10 @@ a.active, a:hover{
     margin-top: 120px;
 }
 .profile_pic img{
-    max-width: 400px;
+    width: 300px;
     border-radius: 300px;
+    height: 350px;
+    outline: 2px solid white;
 }
 .greet h1{
     font-size: 72px;
